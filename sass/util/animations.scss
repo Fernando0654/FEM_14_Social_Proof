@@ -1,0 +1,64 @@
+@media (min-width: 700px) {
+    @keyframes appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes appearFromTheRight {
+        from {
+            margin-left: 50vh;
+        }
+        to {
+            margin-left: 0;
+        }
+    }
+
+    @keyframes appearFromTheRight4em {
+        from {
+            margin-left: 50vh;
+        }
+        to {
+            margin-left: 4em;
+        }
+    }
+
+    @keyframes appearFromTheRight8em {
+        from {
+            margin-left: 50vh;
+        }
+        to {
+            margin-left: 8em;
+        }
+    }
+
+    @keyframes appeaFromTheBottom {
+        from {
+            margin-top: 50vh;
+        }
+        to {
+            margin-top: 0;
+        }
+    }
+
+    @keyframes appeaFromTheBottom1em {
+        from {
+            margin-top: 50vh;
+        }
+        to {
+            margin-top: 1em;
+        }
+    }
+
+    @keyframes appeaFromTheBottom2em {
+        from {
+            margin-top: 50vh;
+        }
+        to {
+            margin-top: 2em;
+        }
+    }
+}

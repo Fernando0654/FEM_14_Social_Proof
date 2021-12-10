@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+@media (min-width: 700px) {
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes appearFromTheRight {
+    from {
+      margin-left: 50vh;
+    }
+    to {
+      margin-left: 0;
+    }
+  }
+  @keyframes appearFromTheRight4em {
+    from {
+      margin-left: 50vh;
+    }
+    to {
+      margin-left: 4em;
+    }
+  }
+  @keyframes appearFromTheRight8em {
+    from {
+      margin-left: 50vh;
+    }
+    to {
+      margin-left: 8em;
+    }
+  }
+  @keyframes appeaFromTheBottom {
+    from {
+      margin-top: 50vh;
+    }
+    to {
+      margin-top: 0;
+    }
+  }
+  @keyframes appeaFromTheBottom1em {
+    from {
+      margin-top: 50vh;
+    }
+    to {
+      margin-top: 1em;
+    }
+  }
+  @keyframes appeaFromTheBottom2em {
+    from {
+      margin-top: 50vh;
+    }
+    to {
+      margin-top: 2em;
+    }
+  }
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  display: block;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 5%;
+  animation: appear 1s;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 650px) {
+  .content-wrapper {
+    padding: 1em;
+  }
+
+  footer {
+    padding: 0;
+    padding-bottom: 2em;
+  }
+}
+.pattern-top, .pattern-bottom {
+  position: fixed;
+  width: 50vw;
+  height: 50vw;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pattern-top {
+  top: 0;
+  left: 0;
+  background-image: url(../assets/img/bg-pattern-top-desktop.svg);
+}
+
+.pattern-bottom {
+  bottom: 0;
+  right: 0;
+  background-image: url(../assets/img/bg-pattern-bottom-desktop.svg);
+  transform: rotateX(360deg);
+  background-position: bottom;
+}
+
+.content-upside {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.content-upside .upside_title {
+  display: block;
+  width: 40%;
+  padding: 1em;
+}
+.content-upside .upside_title h1 {
+  display: block;
+  font-family: "Spartan", sans-serif;
+  color: #502050;
+  width: 100%;
+}
+.content-upside .upside_title p {
+  display: block;
+  width: 100%;
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #937b92;
+}
+.content-upside .upside_rated {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 60%;
+  margin-top: 3em;
+}
+.content-upside .upside_rated .rated-card {
+  display: block;
+  width: 70%;
+  background-color: #f7f2f7;
+  border-radius: 4px;
+}
+.content-upside .upside_rated .rated-card .card-icon {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+.content-upside .upside_rated .rated-card p {
+  display: inline-block;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-left: 2em;
+  color: #502050;
+}
+.content-upside .upside_rated .rated-card:nth-child(1) {
+  animation: appearFromTheRight 1s;
+}
+.content-upside .upside_rated .rated-card:nth-child(2) {
+  animation: appearFromTheRight4em 1.5s forwards;
+}
+.content-upside .upside_rated .rated-card:nth-child(3) {
+  animation: appearFromTheRight8em 2s forwards;
+}
+
+@media (max-width: 650px) {
+  .content-upside {
+    flex-direction: column;
+  }
+  .content-upside .upside_title {
+    width: 100%;
+    padding: 0;
+  }
+  .content-upside .upside_title h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .content-upside .upside_title p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .content-upside .upside_rated {
+    width: 100%;
+    margin: auto;
+  }
+  .content-upside .upside_rated .rated-card {
+    width: 100%;
+    padding-top: 1em;
+  }
+  .content-upside .upside_rated .rated-card .card-icon {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    gap: 0.5em;
+  }
+  .content-upside .upside_rated .rated-card p {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.content-downside {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  font-family: "Spartan", sans-serif;
+}
+.content-downside .downside-quote-card {
+  display: block;
+  background-color: #502050;
+  padding: 1.5em;
+  border-radius: 8px;
+  max-height: 180px;
+}
+.content-downside .downside-quote-card .quote-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+}
+.content-downside .downside-quote-card .quote-header .img-profile {
+  display: block;
+}
+.content-downside .downside-quote-card .quote-header .img-profile img {
+  border-radius: 100%;
+  width: 80%;
+}
+.content-downside .downside-quote-card .quote-header .name-role {
+  font-size: 1rem;
+}
+.content-downside .downside-quote-card .quote-header .name-role p {
+  display: block;
+  font-weight: 700;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: white;
+}
+.content-downside .downside-quote-card .quote-header .name-role span {
+  color: #ee68a4;
+}
+.content-downside .downside-quote-card .quote-body {
+  display: block;
+}
+.content-downside .downside-quote-card .quote-body p {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  line-height: 1.8;
+}
+.content-downside .downside-quote-card:nth-child(1) {
+  animation: appeaFromTheBottom 1s;
+}
+.content-downside .downside-quote-card:nth-child(2) {
+  animation: appeaFromTheBottom1em 1.5s forwards;
+}
+.content-downside .downside-quote-card:nth-child(3) {
+  animation: appeaFromTheBottom2em 2s forwards;
+}
+
+@media (max-width: 650px) {
+  .content-downside {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  .content-downside .downside-quote-card {
+    max-height: inherit;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
