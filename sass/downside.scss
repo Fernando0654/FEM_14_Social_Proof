@@ -10,7 +10,6 @@
         background-color: colors.$very_dark_magenta;
         padding: 1.5em;
         border-radius: 8px;
-        max-height: 180px;
         .quote-header {
             display: flex;
             flex-direction: row;
@@ -58,12 +57,9 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .content-downside {
         flex-direction: column;
         margin-top: 2em;
-        .downside-quote-card {
-            max-height: inherit;
-        }
     }
 }

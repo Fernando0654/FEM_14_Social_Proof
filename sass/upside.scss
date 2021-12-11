@@ -11,6 +11,7 @@
         h1 {
             display: block;
             font-family: "Spartan", sans-serif;
+            font-size: 3.5vw;
             color: colors.$very_dark_magenta;
             width: 100%;
         }
@@ -43,7 +44,7 @@
                 display: inline-block;
                 font-family: "Spartan", sans-serif;
                 font-weight: 700;
-                font-size: 1.1rem;
+                font-size: 1vw;
                 margin-left: 2em;
                 color: colors.$very_dark_magenta;
             }
@@ -60,7 +61,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .content-upside {
         flex-direction: column;
         .upside_title {
@@ -94,6 +95,7 @@
                     text-align: center;
                     width: 100%;
                     margin-left: 0;
+                    font-size: 2vw;
                 }
             }
         }

@@ -1,64 +1,62 @@
-@media (min-width: 700px) {
-    @keyframes appear {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
+@media (min-width: 750px) {
     @keyframes appearFromTheRight {
         from {
-            margin-left: 50vh;
+            transform: translateX(70%);
         }
         to {
-            margin-left: 0;
+            transform: translateX(0%);
         }
     }
-
     @keyframes appearFromTheRight4em {
         from {
-            margin-left: 50vh;
+            transform: translateX(70%);
         }
         to {
-            margin-left: 4em;
+            transform: translateX(20%);
         }
     }
-
     @keyframes appearFromTheRight8em {
         from {
-            margin-left: 50vh;
+            transform: translateX(70%);
         }
         to {
-            margin-left: 8em;
+            transform: translateX(35%);
         }
     }
 
     @keyframes appeaFromTheBottom {
         from {
-            margin-top: 50vh;
+            transform: translateY(70%);
         }
         to {
-            margin-top: 0;
+            transform: translateY(0%);
         }
     }
 
     @keyframes appeaFromTheBottom1em {
         from {
-            margin-top: 50vh;
+            transform: translateY(70%);
         }
         to {
-            margin-top: 1em;
+            transform: translateY(10%);
         }
     }
 
     @keyframes appeaFromTheBottom2em {
         from {
-            margin-top: 50vh;
+            transform: translateY(70%);
         }
         to {
-            margin-top: 2em;
+            transform: translateY(15%);
         }
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
